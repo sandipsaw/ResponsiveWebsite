@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    width: 100%;
+    padding: 1.5rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+
+    .hero-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            display: flex;
+            justify-content: space-between;
+            font-family: monospace;
+        }
+
+        p {
+            text-transform: uppercase;
+            font-size: 1.3em;
+
+        }
+    }
+
+    .image-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+
+        .top {
+            width: 100%;
+            aspect-ratio: 1/1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            h1 {
+                font-size: 2.8em;
+                font-weight: 350;
+                text-transform: uppercase;
+                line-height: 1;
+            }
+
+            p {
+                font-size: 1.6em;
+                font-weight: 400;
+                font-family: monospace;
+                opacity: 0.9;
+            }
+
+            .services {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                width: 100%;
+
+                .service {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        text-transform: uppercase;
+                        font-size: 1.8em;
+                        font-weight: 350;
+                    }
+                }
+            }
+        }
+    }
+
+    .image {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+
+        .toping {
+
+            width: 100%;
+            aspect-ratio: 1/1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .bottoming {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                writing-mode: vertical-rl;
+                margin-right: 1.8em;
+            }
+
+            .text {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                p {
+                    writing-mode: initial;
+                    opacity: 0.6;
+                    font-size: 1.5em;
+                    font-family: monospace;
+                    font-weight: 300;
+                    line-height: 1.3em;
+                }
+
+                h1 {
+                    font-size: 3em;
+                    font-weight: 370;
+                    line-height: 1;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .service-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+
+        .top {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            h1 {
+                font-size: 4em;
+                font-weight: 350;
+            }
+
+            .contents {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                .content {
+                    border-top: 1.5px solid #918c8cba;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2em;
+
+                    h2 {
+                        padding-top: 0.25em;
+                        font-size: 2.2em;
+                        font-weight: 350;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        font-size: 1.6em;
+                        line-height: 1em;
+                        opacity: 0.6;
+                    }
+
+                    h4 {
+                        font-size: 1.3em;
+                        margin-top: 1em;
+                        font-weight: 400;
+
+                        span {
+                            font-size: 1.5em;
+                            padding: 0.25em;
+                            background-color:#333;
+                            border-radius: 50px;
+                            color: white;
+                            height: 2em;
+                        }
+                    }
+                }
+
+                .content-1 {
+                    grid-area: a;
+                }
+
+                .content-2 {
+                    grid-area: b;
+                }
+
+                .content-3 {
+                    grid-area: c;
+                }
+
+                .content-4 {
+                    grid-area: d;
+                }
+            }
+        }
+
+        .bottom {
+            width: 100%;
+
+            img {
+                width: 100%;
+
+                aspect-ratio: 1/1;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .grid-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        hr {
+            position: relative;
+            left: -1.5rem;
+             // Moves it left to counteract padding
+            width: calc(100% + 3rem);
+            border: 0.5px solid rgb(233, 224, 224);
+            top: 1em;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .designs{
+            width: 100%;
+            aspect-ratio: 18/7.8;
+            object-fit: cover;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            .design{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 0.7em;
+    
+                img {
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                }
+            }
+    
+            .text {
+                width: 100%;
+                padding-top: 0.75em;
+                padding-bottom: 0.75em;
+    
+                h2 {
+                    font-size: 2.3em;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+    
+                p {
+                    font-family: monospace;
+                    font-size: 1.5em;
+                }
+    
+                h4 {
+                    font-size: 1.1em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-family: monospace;
+                    padding-top: 0.5em;
+                    padding-bottom: 0.5em;
+    
+                    span {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+    
+            .design2{
+                // visibility: hidden;
+                display: none;
+            }
+    
+            .design6{
+                // visibility: hidden;
+                display: none;
+            }
+
+            
+        }
+    }
+    .content-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        .contents{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+            .content{
+                h2{
+                    font-size: 2em;
+                    font-weight: 350;
+                    text-transform: uppercase;
+                }
+                p{
+                    text-transform: uppercase;
+                }
+            }
+            hr{
+                color: #e2e0e0c2;
+                opacity: 0.5;
+            }
+        }
+    }
+    .teams{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        hr {
+            position: relative;
+            left: -1.5rem;
+             // Moves it left to counteract padding
+            width: calc(100% + 3rem);
+            border: 0.5px solid rgb(233, 224, 224);
+            // top: 1em;
+            
+        }
+        .team{
+            width: 100%;
+            h1{
+                font-size: 3em;
+                text-transform: uppercase;
+                font-weight: 350;
+                
+            }
+            p{
+                font-family: monospace;
+                font-size: 1.4em;
+                line-height: 1.2em;
+                font-weight: 100;
+                padding-top: 0.5em;
+            }
+        }
+        .groups{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+            aspect-ratio: 18/7.8;
+            .group{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                h2{
+                    font-size: 1.75em;
+                    font-weight: 350;
+                    text-transform: uppercase;
+                }
+                .img{
+                    width: 100%;
+                    aspect-ratio: 1/1.125;
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                span{
+                    font-family: monospace;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 1.5em;
+                    font-family: monospace;
+                    opacity: 0.6;
+                }
+            }
+            
+        }
+    }
+
+}
+
+
+@media (min-width:900px) {
+    main {
+        padding: 4rem;
+        gap: 3rem;
+        .image-text {
+            flex-direction: row-reverse;
+            gap: 4em;
+
+            .bottom {
+                h1 {
+                    font-size: 5em;
+
+                }
+
+                p {
+                    font-size: 2em;
+                    font-family: monospace;
+                }
+
+                .services {
+                    margin-top: auto;
+
+                    .service {
+                        p {
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .image {
+            flex-direction: row;
+            gap: 5em;
+
+            .toping {
+                width: 32%;
+
+            }
+
+            .bottoming {
+                width: 68%;
+                gap: 4em;
+                flex-direction: row-reverse;
+
+                p {
+                    margin: 0em;
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4em;
+                    justify-content: space-between;
+                    padding-top: 0.25em;
+                    padding-bottom: 1em;
+
+                    h1 {
+                        font-size: 5em;
+                        font-weight: 360;
+                    }
+
+                    p {
+                        font-size: 1.7em;
+                    }
+                }
+            }
+        }
+
+        .service-text {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 4em;
+
+            .top {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 4em;
+
+                h1 {
+                    font-size: 6em;
+                    line-height: 1em;
+                    text-transform: uppercase;
+                }
+
+                .contents {
+                    gap: 3em;
+                    display: grid;
+                    grid-template-areas:
+                        "a b"
+                        "c d";
+
+                    .content {
+                        width: 100%;
+
+                        h2 {
+                            font-size: 1.4em;
+                            font-weight: 400;
+                        }
+
+                        p {
+                            font-size: 1.1em;
+                            word-spacing: 0.5em;
+                            line-height: 1.2em;
+                        }
+
+                        h4 {
+                            font-size: 0.8em;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            padding-top: 1em;
+
+                            span {
+                                font-size: 2.5em;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                width: 50%;
+            }
+           
+        }
+        
+        .grid-text {
+            hr {
+                position: relative;
+                left: -4rem; // Moves it left to counteract padding
+                width: calc(100% + 8rem);
+                border: 0.5px solid rgb(233, 224, 224);
+            }
+            
+            gap:5em;
+            .designs{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                gap: 1.5em;
+                .design2 , .design6{
+                    display: contents;
+                    display: block;
+                }
+                .design3 , .design4{
+                    padding: 0.5em;
+                    h2{
+                        font-size: 4em;
+                    }
+                    h4{
+                        margin-top:15em;
+                    }
+                }
+                .design1{
+                    width: 1fr;
+                }
+                .design2{
+                    width: 1fr;
+                }
+                .design3{
+                    width: 1fr;
+                }
+                .design4{
+                    width: 1fr;
+                }
+                .design5{
+                    width: 1fr;
+                }
+                .design6{
+                    width: 1fr;
+                }
+            }
+        }
+        .content-text{
+            width:60%;
+            position: relative;
+            gap:8em;
+            margin-left: auto;
+            
+            img{
+                width: 50%;
+                position: absolute;
+                right: 0;
+            }
+            .contents{
+                width: 100%;
+                display: flex;
+                // align-items: center;
+                justify-content: center;
+
+                .content{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content:space-between;
+                    gap: 2em;
+                    .box{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 2em;
+                    }
+                }
+            }
+        }
+        .teams{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // gap: 3em;
+            hr {
+                position: relative;
+                left: -4rem; // Moves it left to counteract padding
+                width: calc(100% + 8rem);
+                border: 0.5px solid rgb(233, 224, 224);
+                
+            }
+            .team{
+                display: flex;
+                justify-content: space-between;
+                h1{
+                    width: 30%;
+                    font-size: 8em;
+                }
+                p{
+                    width: 50%;
+                    font-size: 1.7em;
+                    font-family: monospace;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    opacity: 0.9;
+                }
+            }
+            .groups{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 2em;
+                .group{
+                    width: 25%;
+                    
+                }
+            }
+        }
+        
+        
+    }
+} 
